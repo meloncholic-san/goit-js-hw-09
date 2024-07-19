@@ -22,7 +22,6 @@ refs.createPromiseForm.addEventListener('submit', createPromiseHandler);
   console.log('Amount:', promiseAmount);
 
 
-
   for (let i = 0; i < promiseAmount; i++) {
     const currentDelay = promiseDelay + i * promiseStep;
 
@@ -38,7 +37,6 @@ refs.createPromiseForm.addEventListener('submit', createPromiseHandler);
 }
 
 
-
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -52,5 +50,4 @@ function createPromise(position, delay) {
     }, delay);
 
   });
-
 }
